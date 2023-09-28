@@ -1,8 +1,13 @@
 <template>
-  <LayoutNav />
-  <main>
-    <slot />
-  </main>
+  <div class="flex flex-col h-screen overflow-hidden">
+    <LayoutNav />
+    <div class="flex flex-1 overflow-hidden">
+      <aside class="w-80 border-r border-r-slate-200"></aside>
+      <main class="flex-1 overflow-hidden">
+        <slot />
+      </main>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup></script>
