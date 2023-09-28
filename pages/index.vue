@@ -35,7 +35,7 @@
       <div class="flex gap-2 items-center">
         <p class="text-slate-500 text-sm font-medium">View by:</p>
         <div class="rounded-xl bg-gray-100 overflow-hidden">
-          <button class="p-2">
+          <button class="p-2 hover:bg-gray-200 duration-300 rounded-xl">
             <Icon size="24px" name="material-symbols:menu-rounded" />
           </button>
           <button class="p-2 bg-purple-500 text-white rounded-xl">
