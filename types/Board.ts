@@ -19,6 +19,8 @@ export interface Task {
   image: string | null;
   people: People[];
   files: TaskFile[];
+  reports: number;
+  comments: number;
   due_date: string | null;
 }
 
