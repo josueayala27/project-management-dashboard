@@ -1,7 +1,5 @@
 <template>
   <header>
-    <nav>
-      Hola!
-    </nav>
+    <nav>Hola!</nav>
   </header>
 </template>
