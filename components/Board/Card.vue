@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="flex items-center gap-2">
+    <div v-if="task.comments || task.reports" class="flex items-center gap-2">
       <BaseButton v-if="task.comments">
         <Icon size="20px" name="material-symbols:mode-comment-outline" />
         {{ task.comments }} comments

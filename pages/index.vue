@@ -1,5 +1,49 @@
 <template>
   <div class="flex flex-col h-full">
+    <div class="p-4 flex justify-between items-end">
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2 text-sm text-slate-500">
+          <span class="cursor-pointer hover:underline">Projects</span>
+          /
+          <span class="font-medium">Awesome Project</span>
+        </div>
+        <span
+          class="text-2xl font-semibold text-slate-900 flex items-center gap-2"
+        >
+          Product Development
+          <Icon class="text-yellow-500" name="material-symbols:star" />
+        </span>
+
+        <div class="mt-4">
+          <div class="flex -space-x-2">
+            <div
+              v-for="color in ['08BBE9', '23A147', 'BA9E58']"
+              :key="color"
+              :style="{
+                backgroundColor: `#${color}`,
+              }"
+              class="h-7 aspect-square rounded-full overflow-hidden"
+            />
+            <div
+              class="h-7 aspect-square rounded-full overflow-hidden bg-purple-500 hover:bg-purple-600 grid place-items-center cursor-pointer duration-300"
+            >
+              <Icon class="text-white" name="material-symbols:add" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-2 items-center">
+        <p class="text-slate-500 text-sm font-medium">View by:</p>
+        <div class="rounded-xl bg-gray-100 overflow-hidden">
+          <button class="p-2">
+            <Icon size="24px" name="material-symbols:menu-rounded" />
+          </button>
+          <button class="p-2 bg-purple-500 text-white rounded-xl">
+            <Icon size="24px" name="material-symbols:grid-view-outline" />
+          </button>
+        </div>
+      </div>
+    </div>
     <BoardFilters />
     <div class="flex flex-1 overflow-auto">
       <BoardGridColumn
