@@ -51,7 +51,7 @@
           size="20px"
           name="material-symbols:error-circle-rounded-outline-sharp"
         />
-        {{ task.reports }} reports
+        {{ task.reports }} {{ dynamicReportText }}
       </BaseButton>
     </div>
   </div>
@@ -60,5 +60,9 @@
 <script lang="ts" setup>
 import { Task } from "@/types/Board";
 
-defineProps<{ task: Task }>();
+const props = defineProps<{ task: Task }>();
+
+const dynamicReportText = computed(() => {
+  return props.task.reports > 1 ? "reports" : "report";
+});
 </script>

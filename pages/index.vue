@@ -93,6 +93,25 @@ const columns = reactive<Column[]>([
           },
         ],
       },
+      {
+        title: "Compile Nuxt App",
+        label: {
+          name: "Devops",
+          color: "E926FF",
+        },
+        files: [],
+        due_date: null,
+        comments: 2,
+        reports: 1,
+        image: null,
+        people: [
+          {
+            full_name: "Alvaro Lopez",
+            photo:
+              "https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80",
+          },
+        ],
+      },
     ],
   },
   {
@@ -128,7 +147,7 @@ const columns = reactive<Column[]>([
           name: "UI Design",
         },
         comments: 0,
-        reports: 1,
+        reports: 2,
         due_date: null,
         files: [],
         image: null,

@@ -1,7 +1,7 @@
 <template>
-  <div class="p-4 flex justify-between bg-white">
+  <div class="header">
     <BaseTag> {{ status.label }} </BaseTag>
-    <div class="flex items-center gap-1 text-slate-500">
+    <div class="header__actions">
       <BaseButton>
         <Icon size="24px" name="material-symbols:add" />
       </BaseButton>
@@ -17,3 +17,13 @@ import { BoardColumnStatus } from "@/types/Board";
 
 defineProps<{ status: BoardColumnStatus }>();
 </script>
+
+<!-- I'm testing BEM -->
+<style lang="postcss" scoped>
+.header {
+  @apply p-4 flex justify-between bg-white;
+  &__actions {
+    @apply flex items-center gap-1 text-slate-500;
+  }
+}
+</style>
