@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-96 flex-shrink-0 border-l border-slate-200 first:border-l-0 last:border-r flex flex-col"
+    class="w-96 flex-shrink-0 border-l border-slate-200 first:border-l-0 last:border-r flex flex-col flex-1"
   >
     <BoardGridColumnHeader :status="column.status" />
     <div class="bg-slate-50 flex-1 flex flex-col gap-4 p-4">

@@ -2,11 +2,12 @@
   <div class="flex flex-col h-full">
     <div class="p-4 flex justify-between items-end">
       <div class="flex flex-col">
-        <div class="flex items-center gap-2 text-sm text-slate-500">
-          <span class="cursor-pointer hover:underline">Projects</span>
-          /
-          <span class="font-medium">Awesome Project</span>
-        </div>
+        <BaseBreadcrumb
+          :elements="[
+            { title: 'Projects', isLink: true },
+            { title: 'Awesome Project', isLink: false },
+          ]"
+        />
         <span
           class="text-2xl font-semibold text-slate-900 flex items-center gap-2"
         >
@@ -45,7 +46,7 @@
       </div>
     </div>
     <BoardFilters />
-    <div class="flex flex-1 overflow-auto">
+    <div class="flex overflow-auto h-full">
       <BoardGridColumn
         v-for="(column, index) in columns"
         :key="index"
